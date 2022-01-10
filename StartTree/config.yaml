@@ -1,0 +1,79 @@
+font_size: 15 
+theme: pywal
+tree_1:
+  daily:
+    drive: "https://drive.google.com/drive/my-drive"
+    icloud: "https://www.icloud.com"
+    gmail: "https://mail.google.com/"
+    spotify: "https://open.spotify.com/"
+    r/unixporn: "https://www.reddit.com/r/unixporn/"
+
+  news:
+    theverge: 
+      - "https://www.theverge.com/"
+      - "theverge"
+    eurogamer: "https://www.eurogamer.net/"
+    futurism: "https://futurism.com/"
+    science:npr: "https://www.npr.org/sections/science/"
+
+tree_2:
+   school:
+     canvas:
+       - "https://jru.instructure.com/login/canvas"
+       - "canvas"
+     jruswit: "https://onserv.jru.edu/jruswit/"
+     plagiarism: "https://www.duplichecker.com/"
+     grammarly: "https://www.linkstricks.com/p/grammarly-cookie-1.html"
+
+   comics:
+     empire-dcp:
+       - "https://empire-dcp-minutemen-scanss.blogspot.com/2015/11/aquaman-v1-v7extras-19411962-2    015.html?m=0#more"
+       - "empire-dcp"
+     getcomics: "https://getcomics.info/"
+
+
+tree_3:
+  other:
+    archwiki: 
+      - "https://archlinux.org/"
+      - "arch wiki"
+    netflix: "https://www.netflix.com/"
+    youtube: "https://www.youtube.com/"
+    wallhaven: "https://wallhaven.cc/"
+
+  scentia:
+    MIT:
+      - "https://ocw.mit.edu/"
+      - "MIT"
+    Harvard: "https://www.edx.org/course/introduction-computer-science-harvardx-cs50x"
+    opencourse: "https://github.com/ForrestKnight/open-source-cs"
+    Luke Smith: "https://lukesmith.xyz/library"
+    codewars: "https://www.codewars.com/dashboard"
+    leetcode: "https://leetcode.com/#"
+
+tree_4:
+   archive:
+     r/opendir:
+       - "https://www.reddit.com/r/opendirectories/"
+       - "r/opendir"
+     archive: "https://archive.org/details/folkscanomy&tab=collection"
+     the-eye: "https://the-eye.eu/"
+     libgen: "http://libgen.rs/"
+     gutenberg: "https://www.gutenberg.org/"
+     awesome-piracy: "https://github.com/Igglybuff/awesome-piracy"
+     file-pursuit: "https://filepursuit.com/"
+     cd-romance: "https://cdromance.com/"
+     OTR: "http://www.otronmp3.com/OTR/"
+
+tree_5:
+    torrent:
+      watchsomuch:
+        - "https://watchsomuch.org/"
+        - "watchsomuch"
+      rutracker: "https://rutracker.org/forum/index.php"
+      tutsnode: "https://tutsnode.com"
+      fitgirl: "https://fitgirl-repacks.site/"
+      docuheaven: "https://documentaryheaven.com/"
+      topdocu: "https://topdocumentaryfilms.com/all/"
+      animepahe: "https://animepahe.com/"
+      nyaa: "https://nyaa.si/"
