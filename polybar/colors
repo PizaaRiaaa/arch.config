@@ -1,0 +1,17 @@
+[color]
+
+STATUS-FOREGROUND = #FFF
+
+CIRCLE-FOREGROUND = ${xrdb:color10}
+CIRCLE-BACKGROUND = ${xrdb:color2}
+
+UNDER0 = ${xrdb:color1}
+UNDER1 = ${xrdb:color3}
+UNDER2 = ${xrdb:color4}
+UNDER3 = ${xrdb:color5}
+UNDER4 = ${xrdb:color6}
+UNDER5 = ${xrdb:color10}
+UNDER6 = ${xrdb:color11}
+UNDER7 = ${xrdb:color15}
+
+
