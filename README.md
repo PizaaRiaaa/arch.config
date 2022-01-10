@@ -1,2 +1,2 @@
 # arch.config
-Arch Linux Configuration
+My Arch Linux Configuration
