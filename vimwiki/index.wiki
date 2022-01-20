@@ -1,0 +1,31 @@
+= ToDo =
+
+= School =
+* [[sched]]
+
+   
+= notes =
+   == english ==
+   * [[grammar]]
+
+   == information technology ==
+   
+   == computer science ==
+   * [[coding terminology]] 
+   * [[algorithms]]
+   * [[java]]
+   * [[c++]]
+   
+   == mathematics ==
+   * [[algebra]]
+   
+   ==cheatsheets==
+   * [[vim]] 
+   * [[git]]
+   * [[ssh]]
+   * [[linux]]
+   * [[markdown]]
+   
+   == linux ==
+   * [[tools]]
+

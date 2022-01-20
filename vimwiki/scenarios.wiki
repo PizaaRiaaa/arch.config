@@ -1,0 +1,15 @@
+~~ a++ post increment ~~
+int a = 1;
+System.out.println(a++);
+output: 1
+
+~~++a pre increment~~
+1.int a = 1;
+  System.out.println(++a);
+  output: 2
+  
+2.int a = 1;
+  int b = a++;
+  System.out.println(a++);
+
+

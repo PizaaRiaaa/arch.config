@@ -1,0 +1,188 @@
+~~Git Structure~~
+working area -> staging area -> local repository -> github remote repository
+  files           git add        git commit -m             git push
+  
+============================ DEFINITIONS
+git commit -> permanently storing changes made to the project directory in the git rrepository
+git add -> stores current state of the file in the staging area
+@ = HEAD -> this is same
+  
+============================ SSH
+== change http to ssh repo ==
+~~method 1~~
+   step1 -> git config --edit
+   step2 -> change http url to ssh url
+~~method 2~~
+   git remote set-url origin <ssh url>
+
+== cloning using ssh ==
+step1 -> ssh-keygen
+step2 -> copy kegen (file.pub) to github ssh settings
+step3 -> eval `ssh-agent` (w/ backtick)
+step4 -> ssh-add <filename> (without .pub)
+step5 -> git clone <ssh url>
+~~WHEN importing repository in ssh~~
+step1 - step 4 -> same as a bove
+step5 -> git remote add origin <ssh-url>
+step6 -> git branch -T main
+step7 -> git push -u origin main
+~~WHEN PUSHING~~
+git remote set-url origin https:<token>\@github.com/<username>/<reponame>
+git push
+~~WHEN PERMISSION DENIED (PUBLICKEY)~~
+step1 -> eval `ssh-agent` (with backtick)
+step2 -> ssh-add <filename> (without .pub)
+step3 -> git push
+
+== push & pull ==
+git push -> push the file to the remote station (github)
+git push origin <tagname> -> push certain tag
+git push --tags -> push all tags
+git push origin <tag> -> push certain tag
+git push --follow-tags -> push all commits and tags
+git pull -> pull the files to local station from remote station
+git pull origin <branch> --rebase -> pulling when there's alot of branches
+
+============================ COMMITS
+== renaming & moving ==
+git mv <oldname> <newname>
+git mv <file> <another-dir>/
+cp <oldfile> <newfile>
+git branch -m <currentName> <desiredName> -> changed branch name
+git commit --amend -> rename the latest commit (commit is not push) 
+
+== deleting ==
+git rm <filename>
+git rm --force <filename> -> Can't be restored
+git branch -m <currentName> <desiredName> -> changed branch name
+~~deleting a folder~~
+step1 -> git rm -f <folder> 
+step2 -> git commit -m "description"
+step3 -> git push
+
+== copying ==
+cp <oldfile> <newfile>
+git add <filename>
+git add.
+git commit -m "<descrip>"
+git commit -a -m "descrip" -> s -> restore all shortcut of add & commit
+git clone <url> -> copies the repository
+== undo, reset & restore ==
+git reset <filename> -> remove file from staging area
+git restore <filename> -> restore the content of the file (file must not be push)
+git restore . -> restore all
+git restore -s HEAD~<num> <filename> -> restore commits based on the num (prev commit)
+git revert HEAD -> revert/edit the last commit
+git revert HEAD~<num> -> revert/edt the last num commit
+git revert HEAD~<num>...HEAD -> revert/edit commits within the range (windows will pop up for editing the commits)
+
+== status, show & diff ==
+git status -> status of git
+git show <id> -> if you want to see changes with notes
+git show -> show the latest commit
+git diff HEAD~ <filename> -> show the difference between old and new commits 
+git diff HEAD~<num> filename> -> " num commits back in the pass (num starts w/ 0)
+
+== other ==
+create .gitignore, then type file inside -> ignore the file when git status is used
+
+== merge conflic ==
+git mergetool --tool meld -> (meld is a tool we dl) use this when there is merge conflict
+git mergetool --tool-help -> shows which tools are available 
+
+== stashing ==
+git stash -> save your current changes
+git stash list
+git stash clear
+
+== tags ==
+~~alternative for hash/id of commits (it's easier to read tags than hash)~~
+~~usually use for version or patch~~
+~~git needs to explicitly to push tags
+
+~~LIGHTWEIGHT TAG~~
+git tag -> show all tags
+git tag <tagname> -> adding tag
+git tag --sort=committerdate -> sort the tags
+git tag <descrip> <id> -> adding tag
+git tag -f <tagname> <id> -> change point of commit when tagging (use this when we accidentally use the wrong id)
+git tag -d <tagname> -> delete a tag in local repository
+git push origin --delete <tagname> -> delete in remote repository
+git tag <new> <old> -> change/correct tag 
+~~ANNOTATED TAG~~
+git tag -a <descrip> <id> -m "<descrip>" -> adding annoted tag (use show command <tagname> to see additional info)
+git tag <new> <old>^{} -> change/correct tag
+
+== notes ==
+git notes add -m "<descrip>" <id> -> adding notes 
+
+== config ==
+git config --global core.editor "nvim" -> choosing your default git editor
+git config --global user.name "<username>"
+git config --global user.email "<email>"
+git config --edit -> edit git config
+git config --global push.followTags true -> every push tags also push by default
+
+== importing local repository ==
+create remote repo in github (dont activate README.md)
+step 1 -> git init -> to make it git repository
+step 2 -> git add .
+step 3 -> git commit -m "<descrip>"
+step 4 -> git branch -M main
+step 5 -> git remote set-url origin https:<token>\@github.com/<username>/<reponame>
+step 6 -> git push --set-upstream origin main
+
+== log ==
+| logflag                      | Meaning                                                                 |
+|------------------------------|-------------------------------------------------------------------------|
+| git log                      | Show all commits                                                        |
+| git log  -p                  | Show commits with modified lines included                               |
+| git log  -num                | Show last num latest commits                                            |
+| git log --oneline            | Show only one latest line per commit                                    |
+| git log --oneline -n2        | Show only one line per commit w/ two last latest commit                 |
+| git log --name-only          | Names of files that have changed in each commit                         |
+| git log -p                   | What has changed?                                                       |
+| git log <filename>           | What has changed in this file?                                          |
+| git log -Sfoo                | Search for foo in every commit                                          |
+| git log -Gfoo                | Search in regular expressions                                           |
+| git log --committer="<name>" | Search for all commits by name                                          |
+| git log --autho="<name>"     | Search for all authors by name                                          |
+| git log --since="1 week"     | Use with committer or author to search within designated amount of time |
+| git log --oneline --graph    | Show all commits of all branches                                        |
+| git log --numstat --oneline  | Show all commits with summary of commits                                |
+| git log --stat --oneline     | Show all commits with summary of commits                                |
+| git reflog                   |                                                                         |
+| git log --walk-reflogs       |                                                                         |
+
+
+== branching ==
+git brach <branch> -> to create a branch
+git checkout <branch> -> switch to specific branch & putting all files from main branch to this sub brach.
+git switch <branch> -> same as git checkout
+git push --set-upstream origin <branch> -> push the new brach to remote station
+git checkout -b <branch> -> branch and checkout at the same time
+git branch -d <branchname> -> delete a branch
+git branch -> curent branch and list all branches
+
+== cherry picking ==
+git cherry-pick <id-file> -> pick certain file to add from main branch to feature branch
+
+== mirroring ==
+git push --mirror <repo url> -> copies the content of repo to another repo
+
+== merge ==
+-> merge preseves history
+step1 -> git checkout main
+step 2 -> git merge <branch>
+step 3 -> git push
+git merge --squash <branch> -> merge files and e 
+
+
+== rebase ==
+-> rebase unwanted history is eliminated
+git rebase <branch>
+git push --set-upstream origin <branch> -> command when rebase for the first time
+
+== creating token ==
+git remote set-url origin https://<token>\@github.com/<username>/<repo>
+
