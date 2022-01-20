@@ -1,0 +1,26 @@
+== UPPERCASE & LOWERCASE ==
+   vEpU - uppercase a word
+   u   - lowercase 
+   
+   exp. v - visual
+        E - end of the word
+        U - uppercase
+        
+== INSERT ==
+   a - insert after the cursor line 
+   A - insert to the end of the line
+   o - inssert below the line
+   O - insert above the line
+
+== DELETE ==
+   dj - delete current and below line 
+   dk - delete current and above line
+   d0 - delete end of the line up to the first line 
+   dd - delete the entire line
+   dw - delete a word
+   d2w - delete two words
+   
+== SUBSTITUTE==
+   
+   
+   

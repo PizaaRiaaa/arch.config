@@ -1,0 +1,7 @@
+| Inventor     | Description                                        |   |
+|--------------|----------------------------------------------------|---|
+| Allan turing | Father of computer science, creator of             |   |
+|              | BOBMEB a computer that decoded the enigma computer |   |
+|              | of germany. Shorten the war in 4 years.            |   |
+|              |                                                    |   |
+

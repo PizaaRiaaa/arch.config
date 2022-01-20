@@ -1,0 +1,22 @@
+~~arithmetic~~
+addition
+   -1 + -1     = -2
+   -1 + 5      =  4
+subtraction
+   -1 - 1      = -2
+   -1 - (-1)   =  0
+multiplication
+   -1 * -1     =  1
+   -1 *  1     = -1
+division
+   -1 / -1     =  1
+    1 / -1     = -1
+    
+~~PEMDAS~~
+parenthesis-exponent-multiplication-division-addition-subtraction
+   
+   
+~~prime~~ 
+   divisible only by 1 and itself. 
+   having only two factors.
+   ex. 1, 3, 5, 7

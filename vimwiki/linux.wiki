@@ -1,0 +1,5 @@
+== editing ==
+echo "lorem impsum" > <filename> -> overide or write a line to the file
+echo "another line" >> <filename> -> append another line to the file
+
+== navigation ==

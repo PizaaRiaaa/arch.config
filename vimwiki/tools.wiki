@@ -1,0 +1,16 @@
+~~distro~~
+Arch linux
+~~window manager~~
+dwm or bspwm
+~~hotkey daemon~~
+sxhkd
+~~status bar~~
+polygon
+
+~~other~~
+   ranger - file manager
+   music player - ncmpcpp
+   ueberzug - terminal image viewer
+   zathura - ebook reader
+   terminal - st
+   shell - zsh
