@@ -1,2 +1,0 @@
-== definitions ==
-arrays - collection of items w/ same data type

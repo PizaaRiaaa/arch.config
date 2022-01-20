@@ -1,3 +1,0 @@
-SSH - SECURE SHELL -
-   -> end to end encryption 
-   -> encrypting the connection between two machines

@@ -1,3 +1,0 @@
-_function/methods/subroutine_ - reusable chunk of codes that does something
-_invoke_ - to call a function
-
