@@ -1,35 +1,34 @@
-==TERMS==
-contractions
-conjugate - is how the verb changes depending on the subject
+==terms==
+-> contractions - it's (it is)
+-> conjugate - is how the verb changes depending on the subject
 
-== Usage ==
+== usage ==
 ~~have~~ used when:
 - speaking in the first person (I,we)
 - speaking in the second person (You)
 - speaking in the third person (they)
--> doesn't have (does not have)  
--> don't have
+doesn't have (does not have)  
+don't have
 ~~has~~ used when:
 - speaking in the third person singular (he,she,it)
--> he's,she's, it's got (he,she,it has)
-
-
+- he's,she's, it's got (he,she,it has)
 
 ~~8 parts of speech~~ 
 nouns, pronouns, adjectives
 adverbs, verbs, prepositions, 
 conjunctions, interjections
 
+~~to be verb~~
+  to be
+  am, is, are
+
 ~~articles~~ 
-indefinite
-   a,an
-definite
-   the
+indefinite - a,an
+definite - the
 
 ~~clauses~~ 
-parts of speech, needs subject and ver -> "I eat" -> subject + verb
-link to join two sentences
-complete sentence
+- parts of speech, needs subject and verb -> "I eat" -> subject + verb
+- link to join two sentences
    ~~independent clauses~~
    complete and correct sentence
    it has main subject and main verb
@@ -66,19 +65,25 @@ compound interrogative pronouns
    Whatever,Whoever,Whichever,Whomever,Wherever
 relative pronouns
    That,Which,Who,Whome,Whose,Whichever,Whoever,Whomever
-   
-~~verb~~
-   ~~to be~~
-   am, is, are
 
-~~present simple~~
-<-- past  present -->
-
-things happen:
-- all the time
-- sometimes
-- or never
-~~continues~~
-if it's happening now
+~~tenses~~
+<-- past  present future-->
+   ~~present tense~~
+   she is, he is, we are, they are, it is
+         ~~present simple~~
+         she is, he is, we are, they are, it is
+         things happen:
+         - all the time
+         - sometimes
+         - or never
+         ~~continues~~
+         if it's happening now
+   ~~past tense~~
+   she was, you were, it was, to be was, were, did
+         ~~past simple~~
+         ed - asked, danced, talked, piled, borrowed
+         we played basketball
+         kallan played the saxophone
+         
 
 
