@@ -6,6 +6,7 @@ working area -> staging area -> local repository -> github remote repository
 git commit -> permanently storing changes made to the project directory in the git rrepository
 git add -> stores current state of the file in the staging area
 @ = HEAD -> this is same
+forking -> cloning a repository to make your own changes and have different take on the project.
   
 ============================ SSH
 == change http to ssh repo ==
@@ -34,6 +35,7 @@ step1 -> eval `ssh-agent` (with backtick)
 step2 -> ssh-add <filename> (without .pub)
 step3 -> git push
 
+============================ COMMITS
 == push & pull ==
 git push -> push the file to the remote station (github)
 git push origin <tagname> -> push certain tag
@@ -43,7 +45,6 @@ git push --follow-tags -> push all commits and tags
 git pull -> pull the files to local station from remote station
 git pull origin <branch> --rebase -> pulling when there's alot of branches
 
-============================ COMMITS
 == renaming & moving ==
 git mv <oldname> <newname>
 git mv <file> <another-dir>/
@@ -64,6 +65,7 @@ step3 -> git push
 cp <oldfile> <newfile>
 git add <filename>
 git add.
+git rm --restore --staged <filename> unstaging a file from staging area.
 git commit -m "<descrip>"
 git commit -a -m "descrip" -> s -> restore all shortcut of add & commit
 git clone <url> -> copies the repository
@@ -83,8 +85,17 @@ git show -> show the latest commit
 git diff HEAD~ <filename> -> show the difference between old and new commits 
 git diff HEAD~<num> filename> -> " num commits back in the pass (num starts w/ 0)
 
-== other ==
+== .gitignore ==
 create .gitignore, then type file inside -> ignore the file when git status is used
+config.txt -> config.txt in any directory
+*.exe -> ignore all exe files
+!.output.exe -> except output.exe
+build -> any build directory and files in it and any file name build
+buid/ -> any build directory and files in it but not a file named buid
+bin/*.exe -> all files with extension .exe in the bin directory
+**/config -> any directory named config
+temp* -> all files with name beginning with temp.
+**/configs/local.py -> any files named local.py in any directory named configs
 
 == merge conflic ==
 git mergetool --tool meld -> (meld is a tool we dl) use this when there is merge conflict
@@ -117,7 +128,7 @@ git tag <new> <old>^{} -> change/correct tag
 git notes add -m "<descrip>" <id> -> adding notes 
 
 == config ==
-git config --global core.editor "nvim" -> choosing your default git editor
+git config --global core.editor="nvim" -> choosing your default git editor
 git config --global user.name "<username>"
 git config --global user.email "<email>"
 git config --edit -> edit git config

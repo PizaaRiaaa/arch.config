@@ -2,6 +2,18 @@
 contractions
 conjugate - is how the verb changes depending on the subject
 
+== Usage ==
+~~have~~ used when:
+- speaking in the first person (I,we)
+- speaking in the second person (You)
+- speaking in the third person (they)
+-> doesn't have (does not have)  
+-> don't have
+~~has~~ used when:
+- speaking in the third person singular (he,she,it)
+-> he's,she's, it's got (he,she,it has)
+
+
 
 ~~8 parts of speech~~ 
 nouns, pronouns, adjectives
@@ -35,7 +47,6 @@ cannot be complete setences
 ~~predicate~~ 
 verb, the action, what is subject is doing
 
-
 ~~types of pronouns~~ 
 subject pronouns
    I,He,She,It,We,You,They
@@ -62,5 +73,12 @@ relative pronouns
 
 ~~present simple~~
 <-- past  present -->
+
+things happen:
+- all the time
+- sometimes
+- or never
+~~continues~~
+if it's happening now
 
 
